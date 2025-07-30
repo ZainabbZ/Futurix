@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Future-Proof Results | Future-Proof Careers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">FutureProof</a>
+            <div class="nav-links">
+                <a href="user-register.html">For Professionals</a>
+                <a href="company-register.html">For Companies</a>
+                <a href="#" id="adminLink" style="display:none;">Admin Dashboard</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="container">
+        <div class="results-container">
+            <div class="results-header">
+                <h2>Your Career Resilience Report</h2>
+                <p>Personalized insights to future-proof your professional journey</p>
+            </div>
+            
+            <div class="user-info">
+                <div id="userInfo"></div>
+            </div>
+            
+            <div class="risk-section">
+                <h3 class="section-title">Your Current Role's Future Risk</h3>
+                <p>Based on our assessment, your current position has a <strong id="riskPercentage">0</strong>% likelihood of being significantly impacted by automation/AI in the next 5-10 years.</p>
+                <p>Risk Level: <strong id="riskLevel"></strong></p>
+                
+                <div class="risk-meter-container">
+                    <div class="risk-meter">
+                        <div class="risk-indicator" id="riskIndicator"></div>
+                    </div>
+                    <div class="risk-labels">
+                        <span>Low Risk</span>
+                        <span>High Risk</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-section">
+                <h3 class="section-title">Recommended Future-Proof Skills</h3>
+                <p>Here are 5 skills that can help increase your career resilience:</p>
+                
+                <div id="skillRecommendations">
+                    <!-- Filled by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="companies-section">
+                <h3 class="section-title">Potential Career Matches</h3>
+                <p>These companies are looking for professionals with your traits in more future-resistant roles:</p>
+                
+                <div id="companyMatches">
+                    <!-- Filled by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="next-steps">
+                <a href="index.html" class="btn btn-primary">Return Home</a>
+            </div>
+        </div>
+    </main>
+    
+    <script src="js/auth.js"></script>
+    <script src="js/matching.js"></script>
+</body>
+</html>
