@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Your Company | Future-Proof Careers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">FutureProof</a>
+            <div class="nav-links">
+                <a href="user-register.html">For Professionals</a>
+                <a href="company-register.html">For Companies</a>
+                <a href="#" id="adminLink" style="display:none;">Admin Dashboard</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="container">
+        <div class="form-container">
+            <h2 class="form-title">Company Registration</h2>
+            <form id="companyForm">
+                <div class="form-group">
+                    <label for="companyName">Company Name</label>
+                    <input type="text" id="companyName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Contact Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location (City, State)</label>
+                    <input type="text" id="location" required>
+                </div>
+                
+                <h3 style="margin: 2rem 0 1rem; color: var(--primary);">Open Positions</h3>
+                <div id="positionsContainer">
+                    <!-- Position 1 -->
+                    <div class="position-group">
+                        <div class="form-group">
+                            <label>Position Title</label>
+                            <input type="text" name="positionTitle" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Desired Traits (comma separated)</label>
+                            <textarea name="positionTraits" placeholder="e.g. Leadership, Creativity, Problem Solving" required></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="button" id="addPosition" class="btn btn-secondary" style="margin: 1rem 0 2rem;">+ Add Another Position</button>
+                
+                <div class="form-group submit-container">
+                    <button type="submit" class="btn btn-primary">Complete Registration</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+    <script src="js/auth.js"></script>
+    <script src="js/company-register.js"></script>
+</body>
+</html>
